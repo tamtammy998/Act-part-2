@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header-container">
+    <header class="header-fix">
+      <h1> <i class="fas fa-table"></i>Formatting Table</h1>
+    </header>
+  </div>
+  <div class="container">
+    <section>
+      <aside class="aside">
+        <h2><i class="fa fa-question"></i>HTML Structure</h2>
+        <h3>Tags</h3>
+        <ul>
+          <li><strong>table</strong>:table</li>
+          <li><strong>table</strong>:table title</li>
+          <li><strong>thead</strong>:table header</li>
+          <li><strong>tbody</strong>:table content</li>
+          <li><strong>tr</strong>:row of the table</li>
+          <li><strong>th</strong>:Title cell of the table</li>
+          <li><strong>td</strong>:Cell of a table</li>
+        </ul>
+        <h3>Attributes</h3>
+        <ul>
+          <li><strong>colspan</strong>:defines the number of collumns to be merged</li>
+          <li><strong>rowspan</strong>: defines the number of rows to be merged</li>
+          <li><strong>scope</strong>:defines the td cells to which the th cell is linked (row/ col)</li>
+        </ul>
+      </aside>
+      <article>
+        <h2 title="Unstyled HTML"> Unstyled HTML Table</h2>
+        <p>
+          Let's start by creating a table that will list a data set, for example.<br />
+          No CSS style is applied.
+        </p>
+        <br>
+        <br>
+        <br>
+        <table>
+          <caption> Presentation of the various PHP Frameworks</caption>
+          <thead>
+            <tr>
+              <th>Framework</th>
+              <th>Year of Creation</th>
+              <th>Creator</th>
+              <th>Github Stars</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Symfony</strong></td>
+              <td>2005</td>
+              <td>SensioLabs</td>
+              <td>23.9k</td>
+            </tr>
+            <tr>
+              <td><strong>Laravel</strong></td>
+              <td>2011</td>
+              <td>Taylor Otwwell</td>
+              <td>58.8k</td>
+            </tr>
+            <tr>
+              <td><strong>CodeIgniter</strong></td>
+              <td>2006</td>
+              <td>Rick Ellis</td>
+              <td>18k</td>
+            </tr>
+            <tr>
+              <td><strong>Zend Framework</strong></td>
+              <td>2006</td>
+              <td>Zen Technologies</td>
+              <td>5.7k</td>
+            </tr>
+            <tr>
+              <td><strong>Yii</strong></td>
+              <td>2008</td>
+              <td>Qiang xu</td>
+              <td>4.8k</td>
+            </tr>
+            <tr>
+              <td><strong>CakePHP</strong></td>
+              <td>2005</td>
+              <td>Cake Software Foundation</td>
+              <td>8.1k</td>
+            </tr>
+            <tr>
+              <td><strong>FuelPHP</strong></td>
+              <td>2011</td>
+              <td>Fuel PH dev Team</td>
+              <td>>1k</td>
+            </tr>
+            <tr>
+              <td><strong>Phalcon</strong></td>
+              <td>2012</td>
+              <td>Andres Gutierrez</td>
+              <td>10.1k</td>
+            </tr>
+            <tr>
+              <td><strong>Slim PHP</strong></td>
+              <td>-</td>
+              <td>Slim Framework Team</td>
+              <td>10.6k</td>
+            </tr>
+            <tr>
+              <td><strong>PEAR</strong></td>
+              <td>1999</td>
+              <td>Stig S. Bakken</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan=3><Strong> Total Stars</Strong></td>
+              <td>>100k</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <br>
+      <br>
+    </section>
+    <!----====================================== --->
+    <br>
+    <br>
+    <br>
+    <section>
+      <aside class="aside">
+        <h2><i class="fa fa-question"></i>CSS Styles</h2>
+        <ul>
+          <li>table-layout</li>
+          <li>border-collapse</li>
+          <li>caption-side</li>
+          <li>border</li>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>with</li>
+          <li>color</li>
+          <li>text-align</li>
+          <li>font-size</li>
+          <li>...</li>
+        </ul>
+      </aside>
+      <article>
+        <h2>Stylized HTML Table</h2>
+        <p>The same HTML table with a CSS style this time to define column widths, background colors, font, etc.</p>
+        <table class="withStyle">
+          <thead>
+            <tr>
+              <th>Framework</th>
+              <th>Year of creation</th>
+              <th>Creator</th>
+              <th>Github Stars</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sumfony</strong></td>
+              <td>2005</td>
+              <td>SensioLabs</td>
+              <td>23.9k</td>
+            </tr>
+            <tr>
+              <td><strong>Laravel</strong></td>
+              <td>2011</td>
+              <td>Taylor Otwwell</td>
+              <td>58.8k</td>
+            </tr>
+            <tr>
+              <td><strong>CodeIgniter</strong></td>
+              <td>2006</td>
+              <td>Rick Ellis</td>
+              <td>18k</td>
+            </tr>
+            <tr>
+              <td><strong>Zend Framework</strong></td>
+              <td>2006</td>
+              <td>Zen Technologies</td>
+              <td>5.7k</td>
+            </tr>
+            <tr>
+              <td><strong>Yii</strong></td>
+              <td>2008</td>
+              <td>Qiang xu</td>
+              <td>4.8k</td>
+            </tr>
+            <tr>
+              <td><strong>CakePHP</strong></td>
+              <td>2005</td>
+              <td>Cake Software Foundation</td>
+              <td>8.1k</td>
+            </tr>
+            <tr>
+              <td><strong>FuelPHP</strong></td>
+              <td>2011</td>
+              <td>Fuel PH dev Team</td>
+              <td>>1k</td>
+            </tr>
+            <tr>
+              <td><strong>Phalcon</strong></td>
+              <td>2012</td>
+              <td>Andres Gutierrez</td>
+              <td>10.1k</td>
+            </tr>
+            <tr>
+              <td><strong>Slim PHP</strong></td>
+              <td>-</td>
+              <td>Slim Framework Team</td>
+              <td>10.6k</td>
+            </tr>
+            <tr>
+              <td><strong>PEAR</strong></td>
+              <td>1999</td>
+              <td>Stig S. Bakken</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan=3><Strong> Total Stars</Strong></td>
+              <td>>100k</td>
+            </tr>
+          </tfoot>
+          <caption>Presentation of the various PHP Frameworks</caption>
+
+        </table>
+      </article>
+    </section>
+    <!---================================================-->
+    <br>
+    <br>
+    <br>
+    <section>
+      <aside class="aside">
+        <h2><i class="fa fa-question"></i>Features</h2>
+        <ul>
+          <li>search engine</li>
+          <li>pagination</li>
+          <li>sort by column</li>
+          <li>filter by column</li>
+          <li>order by column</li>
+          <li>...</li>
+        </ul>
+      </aside>
+      <article>
+        <h2>HTML Table / Advanced CSS</h2>
+        <p>Here is an HTML/CSS table widely used in Web application to present a collection of data:
+          <strong>Datatable</strong><br>
+          The possible actions are to be encoded in JavaScript (not implemented in this example) and make it<br>
+          possible to <strong>filter</strong>, <strong> order</strong>,<strong> search</strong> in a large data
+          collection.</p>
+        <div id="datatable-container">
+          <!-------------------------------------------->
+          <div id="datatable-header"> 
+              <div class="dropdown">
+                 <label>Lines to display</label>
+                <select name="options">
+                   <Option value="10">10</Option>
+                   <Option value="15">15</Option>
+                   <Option value="20">20</Option>
+                   <Option value="25">25</Option>
+                </select>
+  
+  </div>
+  <div id="datatable-header-search">
+    <input type="search" value="search">
+  </div>
+</div>
+  <!------------------------------------------------------->
+  
+  <table>
+    <caption>Presentation of the various PHP Frameworks jhgukghoihohokuvjhg</caption>
+    <thead>
+      <tr>
+        
+        <th class="sort_asc" class="no_sort">Framework</th>
+        <th>Year of Creation</th>
+        <th>Creator</th>
+        <th>GitHub Stars</th>
+      </tr>
+       
+      <tr>
+        <th><input type="search" value="Framework name"></th>
+        <th><select>
+            <option value="2005">2005</option>
+            <option value="2011">2011</option>
+            <option value="2006">2005</option>
+            <option value="2008">2008</option>
+            <option value="2012">2013</option>
+            <option value="1999">1999</option>
+          </select></th>
+        <th><input type="search" value="Framework creator"></th>
+        <th><select>
+            <option value="10k">&lt;10k</option>
+            <option value="20161">&lt;20k</option>
+            <option value="2006">&lt;30k</option>
+            <option value="2008">&lt;40k</option>
+            <option value="2012">&lt;50k</option>
+            <option value="1999">&gt;50k</option>
+          </select></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Sumfony</th>
+        <td>2005</td>
+        <td>SensioLabs</td>
+        <td>23.9k</td>
+      </tr>
+      <tr>
+        <th>Laravel</th>
+        <td>2011</td>
+        <td>Taylor Otwwell</td>
+        <td>58.8k</td>
+      </tr>
+      <tr>
+        <th>CodeIgniter</th>
+        <td>2006</td>
+        <td>Rick Ellis</td>
+        <td>18k</td>
+      </tr>
+      <tr>
+        <th>Zend Framework</th>
+        <td>2006</td>
+        <td>Zen Technologies</td>
+        <td>5.7k</td>
+      </tr>
+      <tr>
+        <th>Yii</th>
+        <td>2008</td>
+        <td>Qiang xu</td>
+        <td>4.8k</td>
+      </tr>
+      <tr>
+        <th>CakePHP</th>
+        <td>2005</td>
+        <td>Cake Software Foundation</td>
+        <td>8.1k</td>
+      </tr>
+      <tr>
+        <th>FuelPHP</th>
+        <td>2011</td>
+        <td>Fuel PH dev Team</td>
+        <td>>1k</td>
+      </tr>
+      <tr>
+        <th>Phalcon</th>
+        <td>2012</td>
+        <td>Andres Gutierrez</td>
+        <td>10.1k</td>
+      </tr>
+      <tr>
+        <th>Slim PHP</th>
+        <td>-</td>
+        <td>Slim Framework Team</td>
+        <td>10.6k</td>
+      </tr>
+      <tr>
+        <th>PEAR</th>
+        <td>1999</td>
+        <td>Stig S. Bakken</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      
+      <tr>   
+        <th colspan=3 >
+          <Strong> Total Stars</Strong>          
+         <td s>&gt;100k</td>   
+          </th>            
+      </tr>
+      
+    </tfoot>
+   </table>
+<br>
+
+   <div id="datatable-footer">
+    <div id="datatable-footer-result">
+        <p>Total rows:<strong>150 rows</strong></p>
+    </div>
+    <div id="datatable-footer-paginator">
+      <div class="page">
+        <div class="pagination"> 
+        <div class=link>Back</div>
+        <div class="link">1</div>
+        <div class="link">2</div>
+        <div class="link">3</div>
+        <div class="link">Forward</div>
+      </div>
+    </div>
+    </div>
+</div>
+   
+    
+  </div>
+  </article>
+  </section>
+</body>
+
+</html>
